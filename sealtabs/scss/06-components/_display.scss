@@ -1,0 +1,23 @@
+
+.data-container{
+    display: flex;
+    flex-direction: column;
+    .display-data{
+        color: $dark-font;
+        padding: 5px;
+        margin-left: 40px;
+        font-weight: 600;
+    }
+    .clearfix{
+        margin-top:100px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        .cancel-btn,.confirm-btn{
+            width: 50%;
+            height: 50px;
+            outline: none;
+            border: 1px solid black;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+/*variables*/
+@import '01-settings/_variables.scss';
+/*mixins and functions*/
+@import '02-tools/_mixins.scss';
+/*generic imports*/
+@import '03-generic/_generic.scss';
+/*elements imports*/
+@import '04-elements/_elements.scss';
+/*objects import*/
+@import '05-objects/_objects.scss';
+@import '05-objects/_home.scss';
+@import '05-objects/_sign-up-form.scss';
+@import '05-objects/_display-container.scss';
+/*components import*/
+@import '06-components/_cards.scss';
+@import '06-components/_button.scss';
+@import '06-components/_headers.scss';
+@import '06-components/_form.scss';
+@import '06-components/_display.scss';

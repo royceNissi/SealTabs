@@ -1,0 +1,57 @@
+.demo-btn {
+    background-color: $dark-pink;
+    a{
+        color: $white;
+    }
+    padding: 6px 30px;
+    border-radius: 25px;
+}
+.sign-up-btn{
+    padding: 6px 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 0 1px $border;
+}
+.sign-up-btn:hover{
+    background-color: $dark-blue;
+    a{
+        color: $white;
+    }
+}
+
+.home__tour--white{
+    font-size: $button-font-size;
+    padding: 15px 50px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: $white;
+    border: none;
+    background-color: $dark-pink;
+    margin-top: 30px;
+}
+.read-more{
+    margin: 50px 0;
+    font-size: $button-font-size;
+    padding: 15px 50px;
+    border-radius: 25px;
+    font-weight: 600;
+    background-color: $blue;
+    color: $white;
+    border: none;
+}
+.cancel-btn{
+    color: $dark-pink;
+    font-weight: 600;
+    cursor: pointer;
+}
+.confirm-btn{
+    color: $dark-blue;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cancel-btn:hover{
+    background-color: $dark-blue;
+}
+.confirm-btn:hover{
+    background-color: $dark-blue;
+    color: white;
+}

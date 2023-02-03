@@ -1,0 +1,498 @@
+/*variables*/ /*colors*/
+/*font-size*/
+/*mixins and functions*/
+/*generic imports*/
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*elements imports*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+video {
+  z-index: -1;
+} /*objects import*/
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 15px 10px -15px #111;
+  z-index: 1;
+}
+
+.header__icon {
+  color: #028af3;
+  padding-left: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.nav-item {
+  padding: 5px 5px;
+  margin-right: 15px;
+}
+.nav-item a {
+  font-weight: 600;
+  color: #073b58;
+}
+
+.home {
+  height: 87.5vh;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  background-image: linear-gradient(to right, #028af3, #06107d);
+}
+
+.text {
+  color: #ffffff;
+  flex-direction: column;
+  margin: 100px 0 0 200px;
+  text-align: left;
+  line-height: 50px;
+}
+
+.why-seatabs {
+  height: 100vh;
+  padding: 100px 150px;
+  text-align: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 80px 0;
+}
+
+.about-section {
+  background-color: #deeafd;
+}
+
+.about {
+  padding: 100px 150px;
+  text-align: center;
+}
+.about .about-section__desc {
+  color: #8d8b8b;
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+.feature {
+  height: 100vh;
+  padding: 100px 150px;
+  text-align: center;
+}
+
+.feature-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clients {
+  height: 80vh;
+  margin: 0 100px;
+  text-align: center;
+}
+
+.contact-section {
+  margin-top: 0;
+  padding: 120px 170px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+.footer {
+  margin: 100px 200px 10px 10px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__icon p, .footer__socials p {
+  color: #8d8b8b;
+}
+.footer__policy {
+  color: #8d8b8b;
+  font-size: 18px;
+}
+.footer .header__icon {
+  padding: 0;
+}
+.footer__copyright {
+  text-align: center;
+  padding: 15px 0;
+  color: #8d8b8b;
+}
+.footer__download {
+  font-size: 18px;
+}
+.footer__download p {
+  color: #8d8b8b;
+}
+.footer__download .download__icon {
+  color: #028af3;
+  font-size: medium;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.download__image {
+  margin-top: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.footer-nav-item {
+  padding: 2px 2px;
+  margin-right: 5px;
+}
+
+.footer__icon {
+  color: #028af3;
+  font-size: larger;
+}
+
+.home__header {
+  font-size: 45px;
+}
+
+.home__description {
+  font-size: 30px;
+}
+
+.home__powered-by {
+  margin-top: 30px;
+  font-size: small;
+}
+
+.home__powered-by-description {
+  font-size: 30px;
+}
+
+.home__image {
+  max-width: 100%;
+  height: 480px;
+  margin-top: 80px;
+  margin-right: 700px;
+}
+
+.signup-form-container {
+  padding: 50px;
+  margin: 50px 400px;
+  background-color: #1e2a82;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.form-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(21, 37, 115, 0.657);
+  padding-top: 50px;
+}
+.form-content-container .form-content {
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #028af3;
+  color: #ffffff;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin-top: 200px;
+}
+
+/*components import*/
+.icon-wrapper__card {
+  padding: 10px 50px;
+  width: 23%;
+  margin: 15px 0;
+}
+.icon-wrapper__card .image-desc {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #073b58;
+}
+
+.feature__card {
+  width: 25%;
+}
+.feature__card .feature__heading {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #073b58;
+  font-size: 20px;
+}
+.feature__card .feature__desc {
+  margin-top: 10px;
+  color: #8d8b8b;
+  font-size: 18px;
+}
+
+.demo-btn {
+  background-color: #fb6161;
+  padding: 6px 30px;
+  border-radius: 25px;
+}
+.demo-btn a {
+  color: #ffffff;
+}
+
+.sign-up-btn {
+  padding: 6px 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 0 1px #cacaca;
+}
+
+.sign-up-btn:hover {
+  background-color: #06107d;
+}
+.sign-up-btn:hover a {
+  color: #ffffff;
+}
+
+.home__tour--white {
+  font-size: 23px;
+  padding: 15px 50px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  background-color: #fb6161;
+  margin-top: 30px;
+}
+
+.read-more {
+  margin: 50px 0;
+  font-size: 23px;
+  padding: 15px 50px;
+  border-radius: 25px;
+  font-weight: 600;
+  background-color: #028af3;
+  color: #ffffff;
+  border: none;
+}
+
+.cancel-btn {
+  color: #fb6161;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  color: #06107d;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #06107d;
+}
+
+.confirm-btn:hover {
+  background-color: #06107d;
+  color: white;
+}
+
+.why-sealtabs__heading,
+.feature__title,
+.about-section__heading,
+.clients-section__heading {
+  color: #028af3;
+  margin-top: 10px;
+  padding: 20px 0 15px 0;
+}
+
+.why-sealtabs__text,
+.feature__title-text,
+.about-section__text,
+.clients-section__text {
+  color: #073b58;
+  margin-bottom: 25px;
+}
+
+.sealtabs__icon {
+  width: 100%;
+  color: #028af3;
+  position: fixed;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.signup-form__heading {
+  padding-top: 100px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.confirm-form__heading {
+  padding: 40px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.contact {
+  background-color: #028af3;
+  width: 65%;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 50px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.contact__header {
+  font-size: 40px;
+}
+.contact__para {
+  font-size: 23px;
+}
+.contact__mail-header, .contact__call-header {
+  opacity: 0.5;
+  margin-top: 50px;
+  font-size: 23px;
+  font-weight: 600;
+}
+.contact__mail, .contact__number {
+  color: #ffffff;
+  font-size: 40px;
+}
+.contact__number:hover, .contact__mail:hover {
+  text-decoration: underline;
+}
+
+.contact__form {
+  width: 35%;
+  padding-top: 20px;
+  padding-left: 40px;
+  background-color: #06107d;
+  text-align: left;
+}
+.contact__form p {
+  color: #ffffff;
+  font-size: 23px;
+  margin: 40px 0;
+}
+.contact__form input {
+  background-color: rgba(141, 143, 146, 0.4352941176);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  color: #ffffff;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+.signup-form .radio,
+.signup-form .checkbox {
+  margin-right: 20px;
+  height: 0.9rem;
+  width: 0.9rem;
+  accent-color: #fb6161;
+}
+.signup-form .input {
+  height: 35px;
+  border-radius: 20px;
+  border: 0;
+  color: #06107d;
+  font-size: 18px;
+  padding: 3px 18px;
+}
+.signup-form .input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #fb6161;
+}
+.signup-form .dropdown {
+  height: 40px;
+  padding: 3px 18px;
+  border-radius: 20px;
+}
+.signup-form .dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #fb6161;
+}
+.signup-form .radio-label,
+.signup-form .checkbox-label {
+  display: flex;
+  align-items: center;
+}
+.signup-form .submit {
+  border: 0;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 23px;
+}
+.signup-form .submit:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 3px #fb6161;
+}
+.signup-form .error {
+  color: #fe0909;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+}
+.data-container .display-data {
+  color: #073b58;
+  padding: 5px;
+  margin-left: 40px;
+  font-weight: 600;
+}
+.data-container .clearfix {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.data-container .clearfix .cancel-btn, .data-container .clearfix .confirm-btn {
+  width: 50%;
+  height: 50px;
+  outline: none;
+  border: 1px solid black;
+}/*# sourceMappingURL=main.css.map */

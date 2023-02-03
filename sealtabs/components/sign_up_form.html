@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <base href="/">
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <a href="#home"><h1 class="sealtabs__icon">sealtabs</h1></a>
+    <h3 class="signup-form__heading">Sign Up</h3>
+    <div class="signup-form-container">
+        <form class = "signup-form" id="form">
+            <label id="name-label" for="name">Name</label>
+            <input class="input" id="name" type="text"required>
+            <p id="name-error" class="error"></p>
+
+            <label id="email-label" for="email">Email</label>
+            <input class="input" id="email" type="email"required>
+            <p id="email-error" class="error"></p>
+
+            <label id="password-label" for="password">Password</label> 
+            <input class="input" id="password" type="password" required>
+            <p id="password-error" class="error"></p>
+
+            <label id="password-label" for="password">Confirm Password</label> 
+            <input class="input" id="confirm-password" type="password" required>
+            <p id="confirm-password-error" class="error"></p>
+
+            <label id="phone-number" for="phone">Phone Number</label>
+            <input class="input" type="tel" id="phone" required>
+            <p id="phone-error" class="error"></p>
+            
+            <label id="dropdown-label">Which option best describes your current role?</label>
+            <select class="dropdown" required>
+              <option>Select current role</option>
+              <option>student</option>
+              <option>teacher</option>
+              <option>other</option>
+            </select>    
+            
+            <label id="recommend">Would you recommend sealtabs to a friend?</label>  
+            <label class="radio-label"><input class="radio" name="recommend" type="radio" value="definitely" required>Definitely</label>  
+            <label class="radio-label"><input class="radio" name="recommend" type="radio" value="maybe">Maybe</label>  
+            <label class="radio-label"><input class="radio" name="recommend" type="radio" value="not-sure">Not Sure</label>  
+
+            <label id="changes">What would you like to see improved? (Check all that apply)</label>  
+            <label class="checkbox-label"><input class="checkbox" type="checkbox" name="improve" value="features">Features</label>  
+            <label class="checkbox-label"><input class="checkbox" type="checkbox" name="improve" value="product-demo">Product Demo</label>  
+            <label class="checkbox-label"><input class="checkbox" type="checkbox" name="improve" value="videos">Videos</label>  
+            <label class="checkbox-label"><input class="checkbox" type="checkbox" name="improve" value="something-else">Something Else</label>  
+            <label class="comment-label"> additional comments</label>  
+            <textarea class="comments" rows="5" columns="30"></textarea>  
+            <input class="submit" id="submit" type="submit" value="submit">
+        </form> 
+    </div>
+
+    <!--To display form data-->
+    <div id="display" class="form-content-container" style="display: none;">
+        <form class="form-content">
+            <div class="data-container">
+                <h3 class="confirm-form__heading">Please Confirm your Data</h3>
+                <p id="form-input__name" class="display-data"></p>
+                <p id="form-input__email"class="display-data"></p>
+                <p id="form-input__phone"class="display-data"></p>
+                <div class="clearfix">
+                    <button type="button" id="cancel" class="cancel-btn">CANCEL</button>
+                    <button type="button" id="confirm" class="confirm-btn">CONFIRM</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

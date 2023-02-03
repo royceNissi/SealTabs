@@ -1,0 +1,118 @@
+.contact {
+    background-color: $blue;
+    width: 65%;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 50px;
+    line-height: 40px;
+    color: $white;
+    &__header {
+        font-size: $contacts-header-size;
+    }
+
+    &__para {
+        font-size: $contacts-para-size;
+    }
+
+    &__mail-header,
+    &__call-header {
+        opacity: 0.5;
+        margin-top: 50px;
+        font-size: $contacts-para-size;
+        font-weight: 600;
+    }
+
+    &__mail,
+    &__number {
+        color: $white;
+        font-size: $contacts-size;
+    }
+
+    &__number:hover,
+    &__mail:hover {
+        text-decoration: underline;
+    }
+}
+
+.contact__form {
+    width: 35%;
+    padding-top: 20px;
+    padding-left: 40px;
+    background-color: $dark-blue;
+    text-align: left;
+    p {
+        color: $white;
+        font-size: $contacts-para-size;
+        margin: 40px 0;
+    }
+
+    input {
+        background-color: $transperant;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 25px;
+        color: $white;
+    }
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    .radio,
+    .checkbox {
+        margin-right: 20px;
+        height: 0.9rem;
+        width: 0.9rem;
+        accent-color: $dark-pink;
+    }
+
+    .input {
+        height: 35px;
+        border-radius: 20px;
+        border: 0;
+        color:$dark-blue;
+        font-size: $form-font-size;
+        padding: 3px 18px;
+    }
+
+    .input:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px $dark-pink;
+    }
+
+    .dropdown {
+        height: 40px;
+        padding: 3px 18px;
+        border-radius: 20px;
+    }
+
+    .dropdown:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px $dark-pink;
+    }
+
+    .radio-label,
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+    }
+
+    .submit {
+        border: 0;
+        height: 50px;
+        border-radius: 20px;
+        font-size: $button-font-size;
+    }
+
+    .submit:hover {
+        cursor: pointer;
+        box-shadow: 0 0 0 3px $dark-pink;
+    }
+    .error{
+        color:$red;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,26 @@
+
+.icon-wrapper__card{
+    padding: 10px 50px;
+    width: 23%;
+    margin: 15px 0;
+    .image-desc{
+        font-size: $icon-header-size;
+        margin-top: 20px;
+        font-weight: 600;
+        color: $dark-font;
+    }
+}
+.feature__card{
+    width: 25%;
+    .feature__heading{
+        margin-top: 20px;
+        font-weight: 600;
+        color: $dark-font;
+        font-size: $icon-header-size;
+    }
+    .feature__desc{
+        margin-top: 10px;
+        color: $light-gray;
+        font-size: $icon-para-size;
+    }
+}

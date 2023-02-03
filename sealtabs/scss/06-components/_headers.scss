@@ -1,0 +1,34 @@
+.why-sealtabs__heading,
+.feature__title,
+.about-section__heading,
+.clients-section__heading{
+    color: $blue;
+    margin-top: 10px;
+    padding: 20px 0 15px 0;
+}
+
+.why-sealtabs__text,
+.feature__title-text,
+.about-section__text,
+.clients-section__text{
+    color: $dark-font;
+    margin-bottom: 25px;
+}
+
+.sealtabs__icon{
+    width: 100%;
+    color: $blue;
+    position: fixed; 
+    margin-left:50px;
+    margin-top: 20px;
+}
+.signup-form__heading{
+    padding-top: 100px;
+    font-size: $home-para-size;
+    text-align: center;
+}
+.confirm-form__heading{
+    padding: 40px;
+    font-size:$home-para-size;
+    color: $white;
+}
