@@ -25,14 +25,14 @@ video {
   z-index: -1;
 } /*objects import*/
 .header {
-  width: 100%;
   background-color: #ffffff;
+  box-shadow: 0px 15px 10px -15px #111;
+  width: 100%;
+  z-index: 1;
   padding: 25px 0;
   position: fixed;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 15px 10px -15px #111;
-  z-index: 1;
 }
 
 .header__icon {
@@ -56,8 +56,9 @@ video {
 }
 
 .home {
-  height: 87.5vh;
   display: flex;
+  justify-content: space-evenly;
+  height: 87.5vh;
   justify-content: space-around;
   padding-top: 100px;
   background-image: linear-gradient(to right, #028af3, #06107d);
@@ -77,8 +78,9 @@ video {
   text-align: center;
 }
 
-.icon-wrapper {
+.icon-wrapper, .feature-icon-wrapper {
   display: flex;
+  justify-content: space-evenly;
   justify-content: center;
   flex-wrap: wrap;
   margin: 80px 0;
@@ -104,12 +106,6 @@ video {
   text-align: center;
 }
 
-.feature-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .clients {
   height: 80vh;
   margin: 0 100px;
@@ -123,15 +119,108 @@ video {
 
 .contacts {
   display: flex;
+  justify-content: space-evenly;
   justify-content: center;
   height: 60vh;
 }
+.contacts .contact {
+  width: 65%;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 50px;
+  line-height: 40px;
+}
+.contacts .contact__form {
+  width: 35%;
+  padding-top: 20px;
+  padding-left: 40px;
+}
 
 .footer {
+  display: flex;
+  justify-content: space-evenly;
   margin: 100px 200px 10px 10px;
   padding: 20px 0;
-  display: flex;
   justify-content: space-between;
+}
+
+.download__image {
+  margin-top: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.footer-nav-item {
+  padding: 2px 2px;
+  margin-right: 5px;
+}
+
+.signup-form-container {
+  padding: 50px;
+  margin: 50px 400px;
+  background-color: #1e2a82;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.form-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 37, 115, 0.657);
+  padding-top: 50px;
+}
+.form-content-container .form-content {
+  min-width: 100px;
+  max-width: 500px;
+  background-color: #028af3;
+  color: #ffffff;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  margin-top: 150px;
+}
+
+/*components import*/
+.home__header {
+  font-size: 45px;
+}
+
+.home__description {
+  font-size: 30px;
+}
+
+.home__powered-by {
+  margin-top: 30px;
+  font-size: small;
+}
+
+.home__powered-by-description {
+  font-size: 30px;
+}
+
+.home__image {
+  max-width: 100%;
+  height: 480px;
+  margin-top: 80px;
+  margin-right: 700px;
+}
+
+.footer__icon {
+  color: #028af3;
+  font-size: larger;
 }
 .footer__icon p, .footer__socials p {
   color: #8d8b8b;
@@ -161,86 +250,6 @@ video {
   margin-right: 5px;
 }
 
-.download__image {
-  margin-top: 5px;
-  height: 40px;
-  width: 100px;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 15px;
-}
-
-.footer-nav-item {
-  padding: 2px 2px;
-  margin-right: 5px;
-}
-
-.footer__icon {
-  color: #028af3;
-  font-size: larger;
-}
-
-.home__header {
-  font-size: 45px;
-}
-
-.home__description {
-  font-size: 30px;
-}
-
-.home__powered-by {
-  margin-top: 30px;
-  font-size: small;
-}
-
-.home__powered-by-description {
-  font-size: 30px;
-}
-
-.home__image {
-  max-width: 100%;
-  height: 480px;
-  margin-top: 80px;
-  margin-right: 700px;
-}
-
-.signup-form-container {
-  padding: 50px;
-  margin: 50px 400px;
-  background-color: #1e2a82;
-  color: #ffffff;
-  border-radius: 25px;
-}
-
-.form-content-container {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(21, 37, 115, 0.657);
-  padding-top: 50px;
-}
-.form-content-container .form-content {
-  min-width: 300px;
-  max-width: 500px;
-  background-color: #028af3;
-  color: #ffffff;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-  margin-top: 200px;
-}
-
-/*components import*/
 .icon-wrapper__card {
   padding: 10px 50px;
   width: 23%;
@@ -372,11 +381,6 @@ video {
 
 .contact {
   background-color: #028af3;
-  width: 65%;
-  text-align: left;
-  padding-left: 50px;
-  padding-top: 50px;
-  line-height: 40px;
   color: #ffffff;
 }
 .contact__header {
@@ -400,9 +404,6 @@ video {
 }
 
 .contact__form {
-  width: 35%;
-  padding-top: 20px;
-  padding-left: 40px;
   background-color: #06107d;
   text-align: left;
 }
