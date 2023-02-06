@@ -7,10 +7,7 @@
     display: flex;
     justify-content: space-between;
 }
-.header__icon{
-    color: $blue;
-    padding-left: 20px;
-}
+
 .navbar-nav{
     @include flex;
     margin-top: 15px;
